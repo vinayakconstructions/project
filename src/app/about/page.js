@@ -3,6 +3,13 @@ import Link from 'next/link';
 import { FaBuilding, FaTools, FaClock, FaUsers, FaCheckCircle, FaGlobe, FaHandshake } from "react-icons/fa";
 
 export default function About() {
+  const teamMembers = [
+    { name: "Director 1", role: "Director", image: "https://img.freepik.com/free-vector/elegant-businessman-office-scene_24877-57719.jpg" },
+    { name: "Manager 1", role: "Manager", image: "https://img.freepik.com/free-vector/elegant-businessman-office-scene_24877-57719.jpg" },
+    { name: "Director 2", role: "Director", image: "https://img.freepik.com/free-vector/elegant-businessman-office-scene_24877-57719.jpg" },
+    { name: "Manager 2", role: "Manager", image: "https://img.freepik.com/free-vector/elegant-businessman-office-scene_24877-57719.jpg" },
+  ];
+  
   return (
     <div className=''>
     <div className="min-h-screen bg-gray-100 text-gray-900 mt-20">
@@ -85,7 +92,52 @@ export default function About() {
               </div>
             </div>
           </div>
-
+            <h3 className="text-2xl font-semibold text-gray-800 mt-16">Our Directors</h3>
+            <div className="flex flex-wrap justify-center gap-6 p-6">
+              {teamMembers.map((member, index) => (
+                <div
+                  key={index}
+                  className="flex flex-col items-center w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4 border border-gray-300 rounded-lg shadow-lg bg-white text-center"
+                >
+                  <div className="relative w-full h-40">
+                    <img
+                      src={member.image}
+                      alt={member.name}
+                      // layout="fill"
+                      // objectFit="cover"
+                      className="rounded-t-lg"
+                    />
+                  </div>
+                  <div className="p-4">
+                    <h3 className="text-lg font-semibold">{member.name}</h3>
+                    <p className="text-gray-500">{member.role}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+                <h3 className="text-2xl font-semibold text-gray-800 mt-16">Our Directors</h3>
+            <div className="flex flex-wrap justify-center gap-6 p-6">
+              {teamMembers.map((member, index) => (
+                <div
+                  key={index}
+                  className="flex flex-col items-center w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4 border border-gray-300 rounded-lg shadow-lg bg-white text-center"
+                >
+                  <div className="relative w-full h-40">
+                    <img
+                      src={member.image}
+                      alt={member.name}
+                      // layout="fill"
+                      // objectFit="cover"
+                      className="rounded-t-lg"
+                    />
+                  </div>
+                  <div className="p-4">
+                    <h3 className="text-lg font-semibold">{member.name}</h3>
+                    <p className="text-gray-500">{member.role}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
           <div className="text-center mt-12">
             <FaHandshake className="text-blue-600 text-4xl mx-auto mb-4" />
             <h3 className="text-2xl font-semibold text-gray-800 mb-4">Join Hands with Us!</h3>
