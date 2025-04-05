@@ -109,6 +109,7 @@ export default function About() {
                       // layout="fill"
                       // objectFit="cover"
                       className="rounded-t-lg"
+                      style={{height:"190px",width:"100%"}}
                     />
                   </div>
                   <div className="p-4">
