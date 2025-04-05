@@ -4,10 +4,10 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 const stats = [
-  { value: 100, label: "COMPLETE PROJECTS" },
-  { value: 90, label: "TEAM MEMBERS" },
-  { value: 30, label: "CLIENT REVIEWS" },
-  { value: 10, label: "WINNING AWARDS" },
+  { value: 150, label: "COMPLETE PROJECTS" },
+  { value: 50, label: "TEAM MEMBERS" },
+  // { value: 200, label: "HAPPY CLIENT'S" },
+  { value: 7, label: "Millions Sq.ft, DELIVER PROJECTS" },
 ];
 
 const AnimatedCounter = ({ end }) => {
@@ -32,7 +32,7 @@ const AnimatedCounter = ({ end }) => {
 
 const AnimatedCircles = () => {
   return (
-    <div className="flex justify-center items-center gap-10 p-10 bg-[#FAFAF5]">
+    <div className="flex flex-col sm:flex-row justify-center items-center gap-10 p-10 bg-[#FAFAF5]">
       {stats.map((stat, index) => (
         <div key={index} className="flex flex-col items-center w-60 h-60 border border-black-300 rounded-full justify-center">
           <AnimatedCounter end={stat.value} />

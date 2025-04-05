@@ -28,8 +28,7 @@ const Carousel = ({slides,className}) => {
         pagination={{ clickable: true }}
         // loop={true}
         navigation
-        className="w-full className"
-        style={{height:'720px'}}
+        className="w-full className h-[320px] sm:h-[720px]"
       >
         {slides.map((slide) => (
           <SwiperSlide key={slide.id}>
@@ -38,18 +37,15 @@ const Carousel = ({slides,className}) => {
               <img
                 src={slide.image}
                 alt={slide.title}
-                className="w-full object-cover"
+                className="w-full h-[320px] sm:h-auto object-cover"
               />
               
               {/* Glassmorphism Text Overlay */}
               <div className="absolute inset-0 flex flex-col justify-center items-center text-white px-6">
-                <div className="bg-white/10 backdrop-blur-lg p-6 rounded-lg shadow-lg text-center w-2/3">
-                  <h1 className="text-3xl font-bold">{slide.title}</h1>
-                  <p className="m-6">
-                  Vinayak Construction Company is a reputed firm specializing in residential, commercial,PEB, Warehouse and infrastructure development projects across India. With a strong presence in multiple regions, the company offers a range of services
-                    {/* <span className="font-semibold"> short time</span>, and come back again.  
-                    The <span className="font-semibold">trip</span> from York to Newcastle takes about an hour by train.  
-                    We're going on a <span className="font-semibold">trip</span> to Norway this summer. */}
+                <div className="bg-white/10 backdrop-blur-lg p-6 rounded-lg shadow-lg text-center w-2/3 hidden sm:block ">
+                  <h1 className="text-[14px] sm:text-3xl sm:font-bold ">{slide.title}</h1>
+                  <p className="hidden sm:block m-6">
+                  Vinayak Constructions Company is a reputed firm specializing in residential, commercial,PEB, Warehouse and infrastructure development projects across India. With a strong presence in multiple regions, the company offers a range of services
                   </p>
                   <button
                     onClick={handleDownload}

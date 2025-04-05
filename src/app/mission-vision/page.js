@@ -26,7 +26,7 @@ export default function MissionVission() {
         <h2 className="text-4xl font-bold text-gray-800 mb-6">Our Mission & Vision</h2>
       </div>
 
-        <p className='my-4'>At Vinayak Construction Company, our Mission & Vision reflect our commitment to excellence, innovation, and sustainability in the construction industry.</p>
+        <p className='my-4'>At Vinayak Constructions Company, our Mission & Vision reflect our commitment to excellence, innovation, and sustainability in the construction industry.</p>
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10">
         <div className="bg-white p-6 rounded-2xl shadow-md flex items-start">
           <FaBullseye className="text-blue-600 text-3xl mr-4" />

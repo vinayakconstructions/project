@@ -14,7 +14,7 @@ const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
   const phoneNumber = "919876543210"; // Replace with your WhatsApp number
-  const message = encodeURIComponent("Hi, I am from Vinayak Construction Company.");
+  const message = encodeURIComponent("Hi, I am from Vinayak Constructions Company.");
   const whatsappLink = `https://wa.me/${phoneNumber}?text=${message}`;
 
   // Detect Scroll and Change Header Background

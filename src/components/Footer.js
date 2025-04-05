@@ -1,9 +1,10 @@
+"use client";
 import React from "react";
 import styles from "../styles/Footer.module.css";
 import Image from "next/image";
 const Footer = () => {
   const phoneNumber = "919876543210"; // Replace with your WhatsApp number
-  const message = encodeURIComponent("Hi, I am from Vinayak Construction Company.");
+  const message = encodeURIComponent("Hi, I am from Vinayak Constructions Company.");
   const whatsappLink = `https://wa.me/${phoneNumber}?text=${message}`;
   return (
     <>
@@ -33,13 +34,7 @@ const Footer = () => {
     ></div>
   
     <div 
-      className={styles.footerContainer} 
-      style={{
-        display: "flex", 
-        justifyContent: "space-between",
-        position: "relative",
-        zIndex: 2 // Keeps content above the overlay
-      }}
+      className='footerContainer'
     >
       <div className={styles.socialSection}>
         <Image
@@ -90,10 +85,6 @@ const Footer = () => {
         </p>
       </div>
     </div>
-  
-    {/* <div className={styles.footerBottom} style={{ position: "relative", zIndex: 2 }}>
-      <h1 style={{ fontSize: "20px" }}>Vinayak Construction</h1>
-    </div> */}
 
   </footer>
     <div className="w-full bg-customBrown text-white text-center py-2 text-sm bottom-0 left-0 z-50">
@@ -101,6 +92,20 @@ const Footer = () => {
       <p>Designed By <a href="https://aswebtech.online/">Aswebtech.online</a></p>
     </div>
     
+    <style jsx>{`
+      .footerContainer{
+        display: flex;
+        justify-content: space-between;
+        position: relative,
+      }
+      @media (max-width: 768px) {
+        .footerContainer {
+        gap:40px;
+          flex-direction:column;
+        }
+      }
+            
+      `}</style>
     </>
   
   );

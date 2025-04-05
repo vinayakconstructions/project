@@ -13,7 +13,7 @@ const TestimonialCarousel = ({userSays,className}) => {
     <Swiper
     modules={[Navigation, Pagination]}
     spaceBetween={20} // Space between slides
-    slidesPerView={2} // 2 items per slide
+    slidesPerView={1} // 2 items per slide
     navigation // Navigation arrows
     pagination={{ clickable: true }} // Pagination dots
     autoplay={{ delay: 1000 }}

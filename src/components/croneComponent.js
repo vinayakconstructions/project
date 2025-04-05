@@ -4,9 +4,9 @@ import { useEffect } from "react";
 export default function KeepAlive() {
     useEffect(() => {
       const pingSupabase = () => {
-        fetch("/api/getProjects")
-          .then(() => console.log("Supabase pinged"))
-          .catch((err) => console.error("Ping failed", err));
+        // fetch("/api/getProjects")
+        //   .then(() => console.log("Supabase pinged"))
+        //   .catch((err) => console.error("Ping failed", err));
       };
       // Run immediately on load
       pingSupabase();

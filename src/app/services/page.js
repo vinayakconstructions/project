@@ -1,22 +1,20 @@
 import Link from "next/link";
 
 export default function Services() {
-    const services = [
-      { id: 1, title: "Building Construction", image: "/photos/construction1.jpg", description: "High-quality commercial and residential construction services." },
-      { id: 2, title: "Interior Design", image: "/photos/interiordesign.jpg", description: "Innovative designs to transform your spaces beautifully." },
-      { id: 3, title: "Renovation & Remodeling", image: "/photos/modeling.jpg", description: "Revamp your property with our professional renovation services." },
-      { id: 4, title: "Architecture Planning", image: "/photos/planning.jpg", description: "Modern architecture solutions tailored to your needs." },
-      { id: 5, title: "Flooring & Tiling", image: "/photos/flooring.jpg", description: "Durable and stylish flooring solutions for homes and offices." },
-      { id: 6, title: "House Painting", image: "/photos/gallery16.jpg", description: "Enhance your property’s aesthetic with expert painting services." },
-      { id: 7, title: "Elevator Manufacturer", image: "/photos/elevator.jpg", description: "Elevator manufacturer specializes in lift engineering, installation, innovation, and safety." },
-      { id: 8, title: "Furniture Maker", image: "/photos/wood.jpg", description: "Furniture maker crafts wood wardrobes with skill, design, precision, quality, and creativity." },
-      { id: 9, title: "Glass Fabricator", image: "/photos/glassgate.jpg", description: "Glass fabricator designs, cuts, shapes, polishes, installs, and customizes glass structures." },
+    const buildingWork = [
+      { id: 1, title: "Residential & Commericial", image: "/photos/gallery1.jpg", description: "High-quality commercial and residential construction services." },
+      { id: 2, title: "HealthCare Facilities", image: "/photos/hospitals.png", description: "Hospitals and Medical Colleges" },
+      { id: 3, title: "Education Institutions", image: "/photos/college.png", description: "Coching center and Schools" },
     ];
-  
-    const testimonials = [
-      { name: "John Doe", review: "They did an amazing job on our house renovation. Highly recommend!", image: "/photos/testimonial1.jpg" },
-      { name: "Jane Smith", review: "Professional and timely service. The best construction company!", image: "/photos/testimonial2.jpg" },
-      { name: "Michael Brown", review: "Quality work at an affordable price. Would hire them again!", image: "/photos/testimonial3.jpg" },
+    const InfrastructureProject = [
+      { id: 1, title: "Industrial Structure", image: "/photos/gallery12.jpg", description: "Fabrication, and Erection of Industrial Sheds, Factories, Warehouses, and Custom Steel Structures." },
+      { id: 2, title: "Roadways", image: "/photos/roadways.png", description: "Expressways, Highways & Bridges " },
+      { id: 3, title: "Water Supply", image: "/photos/watertank.jpeg", description: "Pump House and Overhead Water Tank" },
+    ];
+    const Renovation = [
+      { id: 1, title: "Homes Interior", image: "/photos/design1.jpeg", description: "Modular Kitchen, Modular Wardrobes, Lighting, Flooring, Electrical Works, False Ceilings , Wall Design & Painting" },
+      { id: 2, title: "Commerical Interior Fit-out", image: "/photos/gallery16.jpg", description: "Office space & Showrooms" },
+      { id: 3, title: "Renovation", image: "/photos/two.jpeg", description: "Covering Structural Repairs, Interior Upgrades, Waterproofing and Modernization Solutions." },
     ];
   
     const faqs = [
@@ -70,21 +68,58 @@ export default function Services() {
         {/* Services Grid */}
         <section className="py-16 px-8">
           <div className="container mx-auto">
-            <h2 className="text-4xl font-bold text-center mb-12">What We Offer</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {services.map((service) => (
-                <div key={service.id} className="bg-white shadow-lg rounded-lg overflow-hidden">
-                  <img src={service.image} alt={service.title} className="w-full h-60 object-cover" />
-                  <div className="p-6">
-                    <h3 className="text-xl font-bold">{service.title}</h3>
-                    <p className="text-gray-600 mt-2">{service.description}</p>
-                    <button className="mt-4 px-6 py-2 bg-customBrown text-white rounded-lg hover:bg-gray-700">
-                      Learn More
-                    </button>
+            {/* <h2 className="text-4xl font-bold text-center mb-12">What We Offer</h2> */}
+              <h2 className="text2xl sm:text-4xl font-bold text-center mb-5 mt-16" >BUILDING WORKS</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {buildingWork.map((service) => (
+                  <div key={service.id} className="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src={service.image} alt={service.title} className="w-full h-60 object-cover" />
+                    <div className="p-6">
+                      <h3 className="text-xl font-bold">{service.title}</h3>
+                      <p className="text-gray-600 mt-2">{service.description}</p>
+                      <a href="/contact">
+                        <button className="mt-4 px-6 py-2 bg-customBrown text-white rounded-lg hover:bg-gray-700">
+                          Learn More
+                        </button>
+                      </a>
+                    </div>
                   </div>
-                </div>
-              ))}
-            </div>
+                ))}
+              </div>
+              <h2 className="text2xl sm:text-4xl font-bold text-center mb-5 mt-16">INFRASTRUCTURE PROJECTS</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {InfrastructureProject.map((service) => (
+                  <div key={service.id} className="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src={service.image} alt={service.title} className="w-full h-60 object-cover" />
+                    <div className="p-6">
+                      <h3 className="text-xl font-bold">{service.title}</h3>
+                      <p className="text-gray-600 mt-2">{service.description}</p>
+                      <a href="/contact">
+                        <button className="mt-4 px-6 py-2 bg-customBrown text-white rounded-lg hover:bg-gray-700">
+                          Learn More
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                ))}
+              </div>
+              <h2 className="text2xl sm:text-4xl font-bold text-center mb-5 mt-16">RENOVATION & INTERIOR FIT-OUT</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {Renovation.map((service) => (
+                  <div key={service.id} className="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src={service.image} alt={service.title} className="w-full h-60 object-cover" />
+                    <div className="p-6">
+                      <h3 className="text-xl font-bold">{service.title}</h3>
+                      <p className="text-gray-600 mt-2">{service.description}</p>
+                      <a href="/contact">
+                        <button className="mt-4 px-6 py-2 bg-customBrown text-white rounded-lg hover:bg-gray-700">
+                          Learn More
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                ))}
+              </div>
           </div>
         </section>
   

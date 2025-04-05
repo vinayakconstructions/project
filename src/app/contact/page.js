@@ -6,7 +6,7 @@ import { FaPhoneAlt, FaMapMarkerAlt, FaEnvelope } from "react-icons/fa";
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
-    name: "",
+    username: "",
     email: "",
     subject: "",
     message: "",
@@ -28,15 +28,15 @@ const ContactUs = () => {
     setMessage("");
 
     try {
-      const response = await fetch("/api/contact", {
+      const response = await fetch("https://backend-caky.onrender.com/api/v1/feedback", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
       });
-
+      console.log("response",response)
       if (response.ok) {
         setMessage("✅ Your message has been sent successfully!");
-        setFormData({ name: "", email: "", subject: "", message: "" ,phone:""});
+        setFormData({ username: "", email: "", subject: "", message: "" ,phone:""});
       } else {
         setMessage("❌ Failed to send message. Please try again.");
       }
@@ -95,8 +95,8 @@ Bhimganjmandi, Kota, Rajasthan, 324002</p>
               <label className="block text-gray-700 font-semibold">Name</label>
               <input
                 type="text"
-                name="name"
-                value={formData.name}
+                name="username"
+                value={formData.username}
                 onChange={handleChange}
                 required
                 className="w-full p-3 border rounded-lg focus:ring focus:ring-customBrown"

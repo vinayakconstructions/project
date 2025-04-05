@@ -27,9 +27,9 @@ export function UsersTab() {
     fetchData()
   },[])
   async function fetchData () {
-    let response = await axios.get('/api/getProjects')
-    console.log("response.data.projects",response.data.projects)
-    setProjects(response.data.projects)
+    // let response = await axios.get('/api/getProjects')
+    // console.log("response.data.projects",response.data.projects)
+    // setProjects(response.data.projects)
   }
     return <main className="flex-1 p-6 bg-gray-100" style={{height: 'auto',zIndex:2,position:"relative"}}>
     <div className="flex justify-between items-center mb-4 ">
