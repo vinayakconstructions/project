@@ -22,14 +22,14 @@ const Footer = () => {
     {/* Overlay for Opacity Effect */}
     <div 
       style={{
-        position: "absolute",
-        top: 0,
-        left: 0,
-        width: "100%",
-        height: "100%",
-        backgroundColor: "black",
-        opacity: 0.1,  // Adjust opacity
-        zIndex: 1
+        // position: "absolute",
+        // top: 0,
+        // left: 0,
+        // width: "100%",
+        // height: "100%",
+        // backgroundColor: "black",
+        // opacity: 0.1,  // Adjust opacity
+        // zIndex: 1
       }}
     ></div>
   
@@ -62,12 +62,12 @@ const Footer = () => {
   
       <div className={styles.linksSection}>
         <ul>
-          <li><a href="/about">About us</a></li>
-          <li><a href="/projects">Projects</a></li>
-          <li><a href="/service">Service</a></li>
-          <li><a href="/privacy-policy">Privacy policy</a></li>
-          <li><a href="/terms-condition">Terms & conditions</a></li>
-          <li><a href="/mission-vision">Mission & Vision</a></li>
+        <a href="/about"><li>About us</li></a>
+        <a href="/projects"><li>Projects</li></a>
+        <a href="/service"><li>Service</li></a>
+        <a href="/privacy-policy"><li>Privacy policy</li></a>
+        <a href="/terms-condition"><li>Terms & conditions</li></a>
+        <a href="/mission-vision"><li>Mission & Vision</li></a>
         </ul>
       </div>
   
