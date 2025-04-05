@@ -21,6 +21,9 @@
   display: flex;
   gap: 10px;
 }
+.linksSection{
+  cursor: pointer;
+}
 
 .social-icon {
   color: #fff;
