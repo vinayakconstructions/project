@@ -151,7 +151,7 @@ export default function Home({ Component, pageProps }) {
               backgroundImage: videoError ? "url('/photos/gallery1.jpg')" : "none",
             }}
           >
-            <img src="/essentials/about.jpg" style={{width:"100%",height:'100vh'}}/>
+            <img src="/essentials/about.jpg" className="about_us"/>
           </div>
 
           <div className="w-full md:w-1/2 flex items-center justify-center p-10 bg-white">
