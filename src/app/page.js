@@ -48,51 +48,51 @@ export default function Home({ Component, pageProps }) {
   const userSays = [
     {
       id: 1,
-      name: "— Raj P., Restaurant Owner",
+      name: "Rakesh Kumar khandelwal, Raghav Agro Industries",
       text: `"We hired Vinayak Constructions for our home renovation, and the results exceeded our expectations. Their attention to detail and commitment to quality made the entire process seamless. Highly recommended!"`,
       rating: "⭐⭐⭐⭐⭐",
-      address: "Gwalior, India",
+      // address: "KOTA",
       image: "/photos/men.png"
     },
     {
       id: 2,
-      name: "Karen T., CEO of Abslses Digital",
+      name: "Harsh Bidada, Charbhuja Marble stonex",
       text: "From start to finish, the team was professional, timely, and communicative. Our new office space turned out exactly as planned, and the craftsmanship is outstanding!",
       rating: "⭐⭐⭐⭐⭐",
-      address: "Bihar, India",
+      // address: "Kishangarh",
       image: "/photos/men.png"
     },
     {
       id: 3,
-      name: "Md Imam, Business Owner",
+      name: "Ankush Gupta, Sun Agro corporation",
       text: "We always dreamed of a modern, custom-designed home, and Vinayak Constructions made it happen. They worked closely with us, ensuring every detail matched our vision. Amazing experience!",
       rating: "⭐⭐⭐⭐⭐",
-      address: "Gujarat, India",
+      // address: "Gujarat, India",
       image: "/photos/men.png"
     },
     {
       id: 4,
-      name: "Akash Kr, Engineer",
+      name: "Sudhir Maan, IFFCO",
       text: "Finding a reliable construction team is tough, but Vinayak Constructions delivered beyond expectations. They completed our commercial project on time and within budget while maintaining top-notch quality!",
       rating: "⭐⭐⭐⭐⭐",
-      address: "Bihar, India",
+      // address: "Bihar, India",
       image: "/photos/men.png"
     },
     {
       id: 5,
-      name: "Mr Patsy, Business Owner",
-      text: "We entrusted them with our restaurant’s complete renovation, and the results were outstanding. Their expertise in design and construction made a huge difference!",
+      name: "Kutubuddin khan, Sufi Agro",
+      text: "Working with Vinayak Construction was a great experience. They were organized, skilled, and delivered excellent results on time. We truly appreciate their dedication and would gladly recommend them to others.",
       rating: "⭐⭐⭐⭐⭐",
-      address: "Noida, India",
+      // address: "Noida, India",
       image: "/photos/men.png"
     },
     {
       id: 6,
-      name: "Shalini Prasad, House Owner",
-      text: "Booking my family vacation to Paris was such a breeze. The itinerary was perfect for all ages, and we had a mix of culture, food, and fun activities.",
+      name: "Amit Khandelwal, Star Agri Warehousing And collateral Management Ltd",
+      text: "Vinayak Construction exceeded our expectations with their quality work and professionalism. The team was efficient, responsive, and trustworthy. We’re very satisfied with the results.",
       rating: "⭐⭐⭐⭐⭐",
-      address: "Patna, India",
-      image: "/photos/girl.png"
+      // address: "Patna, India",
+      image: "/photos/men.png"
     },
   ]
 
