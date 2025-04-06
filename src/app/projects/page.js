@@ -78,7 +78,7 @@ export default function VideoSection() {
       </ul>
     </div>
       `,
-      'images': ['/projects/two/1.jpg','/projects/two/2.jpg','/projects/two/3.jpg','/projects/two/4.jpg','/projects/two/5.jpg','/projects/two/6.jpg']
+      'images': ['/photos/iifco.jpeg','/projects/two/2.jpg','/projects/two/3.jpg','/projects/two/4.jpg','/projects/two/5.jpg','/projects/two/6.jpg']
     },
     {
         "id": 2,

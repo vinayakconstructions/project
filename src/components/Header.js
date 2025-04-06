@@ -13,7 +13,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
-  const phoneNumber = "919876543210"; // Replace with your WhatsApp number
+  const phoneNumber = "9413350792"; // Replace with your WhatsApp number
   const message = encodeURIComponent("Hi, I am from Vinayak Constructions Company.");
   const whatsappLink = `https://wa.me/${phoneNumber}?text=${message}`;
 
@@ -87,13 +87,13 @@ const Header = () => {
             <Link  href={whatsappLink} target="_blank">
               <FaWhatsapp size={24} className="text-gray-600 hover:text-gray-800 transition" />
             </Link>
-            <Link href="https://facebook.com" target="_blank">
+            <Link href={whatsappLink}  target="_blank">
               <FaFacebook size={24} className="text-gray-600 hover:text-gray-800 transition" />
             </Link>
-            <Link href="https://twitter.com" target="_blank">
+            <Link href={whatsappLink}  target="_blank">
               <FaTwitter size={24} className="text-gray-400 hover:text-gray-600 transition" />
             </Link>
-            <Link href="https://linkedin.com" target="_blank">
+            <Link href={whatsappLink}  target="_blank">
               <FaLinkedin size={24} className="text-gray-700 hover:text-gray-900 transition" />
             </Link>
           </div>
@@ -130,13 +130,13 @@ const Header = () => {
               </Link>
             ))}
             <div className="flex space-x-4">
-              <Link href="https://facebook.com" target="_blank">
+              <Link href={whatsappLink} target="_blank">
                 <FaFacebook size={24} className="text-blue-600 hover:text-blue-800 transition" />
               </Link>
-              <Link href="https://twitter.com" target="_blank">
+              <Link href={whatsappLink} target="_blank">
                 <FaTwitter size={24} className="text-blue-400 hover:text-blue-600 transition" />
               </Link>
-              <Link href="https://linkedin.com" target="_blank">
+              <Link href={whatsappLink} target="_blank">
                 <FaLinkedin size={24} className="text-blue-700 hover:text-blue-900 transition" />
               </Link>
             </div>

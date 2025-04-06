@@ -66,8 +66,10 @@ const ContactUs = () => {
             <FaPhoneAlt size={40} className="text-blue-600 mb-3" />
             <h3 className="text-xl font-semibold">Phone</h3>
             <p className="text-gray-600 mt-2">
-            Vaibhav Saxena - +91 6376-635379 & 094133 50792<br></br>
-            Ikramuddin khan - +91 94141 76392 & +91 861-947015
+            Vaibhav Saxena - 94133 50792<br></br>
+            Ikramuddin khan - 94141 76392<br></br>
+            Neeraj Khandelwal - 9829035027<br></br>
+            <span style={{fontSize:"14px"}}>Ghanshyam Khandelwal</span> - 9413350792<br></br>
             </p>
           </div>
           <div className="flex flex-col items-center bg-white shadow-md p-6 rounded-lg">
@@ -81,8 +83,6 @@ Bhimganjmandi, Kota, Rajasthan, 324002</p>
             <FaEnvelope size={40} className="text-green-600 mb-3" />
             <h3 className="text-xl font-semibold">Email</h3>
             <p className="text-gray-600 mt-2">Vinayakconstructions9255@gmail.com
-              <br></br>
-              vinayakconstructions101@gmail.com
             </p>
           </div>
         </div>

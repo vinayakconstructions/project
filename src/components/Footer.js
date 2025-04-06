@@ -3,7 +3,7 @@ import React from "react";
 import styles from "../styles/Footer.module.css";
 import Image from "next/image";
 const Footer = () => {
-  const phoneNumber = "919876543210"; // Replace with your WhatsApp number
+  const phoneNumber = "9413350792"; // Replace with your WhatsApp number
   const message = encodeURIComponent("Hi, I am from Vinayak Constructions Company.");
   const whatsappLink = `https://wa.me/${phoneNumber}?text=${message}`;
   return (
@@ -45,16 +45,16 @@ const Footer = () => {
         />
         <h2>Connect on social</h2>
         <div className={styles.socialIcons} style={{ display: "flex", gap: "20px", marginTop: "0px" }}>
-          <a href={whatsappLink} className={styles.socialIcon} aria-label="Facebook">
+          <a href={whatsappLink}className={styles.socialIcon} aria-label="Facebook">
             <i className="fab fa-whatsapp"></i>
           </a>
-          <a href="#" className={styles.socialIcon} aria-label="Facebook">
+          <a href={whatsappLink} className={styles.socialIcon} aria-label="Facebook">
             <i className="fab fa-facebook-f"></i>
           </a>
-          <a href="#" className={styles.socialIcon} aria-label="Instagram">
+          <a href={whatsappLink} className={styles.socialIcon} aria-label="Instagram">
             <i className="fab fa-instagram"></i>
           </a>
-          <a href="#" className={styles.socialIcon} aria-label="LinkedIn">
+          <a href={whatsappLink} className={styles.socialIcon} aria-label="LinkedIn">
             <i className="fab fa-linkedin-in"></i>
           </a>
         </div>
@@ -75,8 +75,10 @@ const Footer = () => {
         <p style={{ textAlign: "left" }}><strong>Registered Office</strong></p>
         <p style={{ textAlign: "left" }}>Flat no 101,Parsh Chhaya Apartment, Bal Mandir Road </p>
         <p style={{ textAlign: "left" }}>Bhimganjmandi, Kota, Rajasthan, 324002</p>
-        <p style={{ textAlign: "left" }}>Vaibhav Saxena -  +91 6376-635379 & 094133 50792</p>
-        <p style={{ textAlign: "left" }}>Ikramuddin khan - +91 94141 76392 & +91 861-9470159</p>
+        <p style={{ textAlign: "left" }}>Vaibhav Saxena -  +91 94133 50792</p>
+        <p style={{ textAlign: "left" }}>Ikramuddin khan - +91 94141 76392</p>
+        <p style={{ textAlign: "left" }}>Neeraj Khandelwal - +91 9829035027</p>
+        <p style={{ textAlign: "left" }}>Ghanshyam Khandelwal - +91 9413350792</p>
         <p style={{ textAlign: "left" }}>
           Email:{" "}
           <a href="mailto:Vinayakconstructions9255@gmail.com">
