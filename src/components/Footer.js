@@ -75,8 +75,8 @@ const Footer = () => {
         <p style={{ textAlign: "left" }}><strong>Registered Office</strong></p>
         <p style={{ textAlign: "left" }}>Flat no 101,Parsh Chhaya Apartment, Bal Mandir Road </p>
         <p style={{ textAlign: "left" }}>Bhimganjmandi, Kota, Rajasthan, 324002</p>
-        <p style={{ textAlign: "left" }}>Vaibhav Saxena -  +91 94133 50792</p>
-        <p style={{ textAlign: "left" }}>Ikramuddin khan - +91 94141 76392</p>
+        <p style={{ textAlign: "left" }}>Vaibhav Saxena -  +91 9413350792</p>
+        <p style={{ textAlign: "left" }}>Ikramuddin khan - +91 9414176392</p>
         <p style={{ textAlign: "left" }}>Neeraj Khandelwal - +91 9829035027</p>
         <p style={{ textAlign: "left" }}>Ghanshyam Khandelwal - +91 9413350792</p>
         <p style={{ textAlign: "left" }}>
