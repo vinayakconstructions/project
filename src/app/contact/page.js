@@ -66,7 +66,7 @@ const ContactUs = () => {
             <FaPhoneAlt size={40} className="text-blue-600 mb-3" />
             <h3 className="text-xl font-semibold">Phone</h3>
             <p className="text-gray-600 mt-2">
-            Vaibhav Saxena - 94133s50792<br></br>
+            Vaibhav Saxena - 9413350792<br></br>
             Ikramuddin khan - 9414176392<br></br>
             Neeraj Khandelwal - 9829035027<br></br>
             <span style={{fontSize:"14px"}}>Ghanshyam Khandelwal</span> - 9413350792<br></br>
