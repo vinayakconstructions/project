@@ -14,7 +14,7 @@ const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
   const phoneNumber = "9413350792"; // Replace with your WhatsApp number
-  const message = encodeURIComponent("Hi, I am from Vinayak Constructions Company.");
+  const message = encodeURIComponent("Hello, I came across Vinayak Constructions and would like to know more about your services. Looking forward to your response.");
   const whatsappLink = `https://wa.me/${phoneNumber}?text=${message}`;
 
   // Detect Scroll and Change Header Background
@@ -117,6 +117,7 @@ const Header = () => {
               { name: "Projects", path: "/projects" },
               { name: "Services", path: "/services" },
               { name: "Contact", path: "/contact" },
+              { name: "Download Brochure", path: "/Vinayak_Construction_Brochure.pdf" },
             ].map((item) => (
               <Link
                 key={item.path}

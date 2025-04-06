@@ -32,9 +32,10 @@ export default function Home({ Component, pageProps }) {
   }, []);
   const slides = [
     // { id: 1, title: "Building the Future with Strength, Innovation", image: "essentials/graphics/1.png" },
-    { id: 2, title: "Your Trusted Partner in Quality Construction", image: "essentials/graphics/2.png", },
-    { id: 3, title: "Strong Foundations, Modern Designs, Lasting Structures", image: "essentials/graphics/7.png", },
-    { id: 4, title: "Turning Dreams into Reality with Expertise", image: "essentials/graphics/4.png", },
+    // { id: 2, title: "Your Trusted Partner in Quality Construction", image: "essentials/graphics/2.png", },
+    // { id: 3, title: "Strong Foundations, Modern Designs, Lasting Structures", image: "essentials/graphics/7.png", },
+    // { id: 4, title: "Turning Dreams into Reality with Expertise", image: "essentials/graphics/4.png", },
+    { id: 5, title: "Strong Foundations, Modern Designs, Lasting Structures", image: "essentials/graphics/7.png", },
     // { id: 5, title: "Constructing the Future with Innovation and Integrity", image: "essentials/graphics/5.png", },
   ];
 
@@ -49,7 +50,7 @@ export default function Home({ Component, pageProps }) {
     {
       id: 1,
       name: "Rakesh Kumar khandelwal, Raghav Agro Industries",
-      text: `"We hired Vinayak Constructions for our home renovation, and the results exceeded our expectations. Their attention to detail and commitment to quality made the entire process seamless. Highly recommended!"`,
+      text: `"Excellent work on our PEB warehouse—delivered on time with great quality and attention to detail. The structure meets all our needs. Highly professional team."`,
       rating: "⭐⭐⭐⭐⭐",
       // address: "KOTA",
       image: "/photos/men.png"
@@ -57,7 +58,7 @@ export default function Home({ Component, pageProps }) {
     {
       id: 2,
       name: "Harsh Bidada, Charbhuja Marble stonex",
-      text: "From start to finish, the team was professional, timely, and communicative. Our new office space turned out exactly as planned, and the craftsmanship is outstanding!",
+      text: "From start to finish, the team was professional, timely, and communicative. Our new office space ,showrooms and factory turned out exactly as planned, and the craftsmanship is outstanding!",
       rating: "⭐⭐⭐⭐⭐",
       // address: "Kishangarh",
       image: "/photos/men.png"
@@ -65,7 +66,7 @@ export default function Home({ Component, pageProps }) {
     {
       id: 3,
       name: "Ankush Gupta, Sun Agro corporation",
-      text: "We always dreamed of a modern, custom-designed home, and Vinayak Constructions made it happen. They worked closely with us, ensuring every detail matched our vision. Amazing experience!",
+      text: "We’re very pleased with Vinayak Constructions’ work on our ward house. The project was completed smoothly, meeting all healthcare standards and expectations.",
       rating: "⭐⭐⭐⭐⭐",
       // address: "Gujarat, India",
       image: "/photos/men.png"
@@ -73,7 +74,7 @@ export default function Home({ Component, pageProps }) {
     {
       id: 4,
       name: "Sudhir Maan, IFFCO",
-      text: "Finding a reliable construction team is tough, but Vinayak Constructions delivered beyond expectations. They completed our commercial project on time and within budget while maintaining top-notch quality!",
+      text: "Finding a reliable construction partner is challenging, but Vinayak Constructions truly delivered. They completed both our commercial and warehouse projects on time, within budget, and with outstanding quality.",
       rating: "⭐⭐⭐⭐⭐",
       // address: "Bihar, India",
       image: "/photos/men.png"
@@ -109,7 +110,7 @@ export default function Home({ Component, pageProps }) {
       <div className="relative w-full h-[320px] sm:h-[720px]">
         {/* Default Image (Will Fade Out) */}
         <img
-          src="/essentials/graphics/2.1.png"
+          src="/essentials/graphics/7.png"
           alt="Loading..."
           className={`absolute inset-0 w-full h-[320px] sm:h-[720px] object-cover transition-opacity duration-500 ${
             isLoaded ? "opacity-0" : "opacity-100"

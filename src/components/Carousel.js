@@ -10,7 +10,7 @@ import "swiper/css/pagination";
 const Carousel = ({slides,className}) => {
 
   const handleDownload = () => {
-    const brochureUrl = "/brochure.pdf"; // Change this to your actual file path
+    const brochureUrl = "/Vinayak_Construction_Brochure.pdf"; // Change this to your actual file path
     const link = document.createElement("a");
     link.href = brochureUrl;
     link.download = "Vinayak_Construction_Brochure.pdf";
@@ -47,6 +47,7 @@ const Carousel = ({slides,className}) => {
                   <p className="hidden sm:block m-6">
                   Vinayak Constructions Company is a reputed firm specializing in residential, commercial,PEB, Warehouse and infrastructure development projects across India. With a strong presence in multiple regions, the company offers a range of services
                   </p>
+                  <a style={{cursor:"pointer",zIndex:99999999}}>
                   <button
                     onClick={handleDownload}
                     className="w-[200] bg-gradient-to-r from-customBrown to-customBrown hover:from-purple-700 hover:to-blue-700 text-white px-6 py-3 rounded-full items-center gap-2 shadow-xl transition-all transform hover:scale-110 active:scale-95 border border-white/30"
@@ -54,6 +55,7 @@ const Carousel = ({slides,className}) => {
                   >
                      Download Brochure
                   </button>
+                  </a>
                 </div>
               </div>
             </div>

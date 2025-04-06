@@ -4,7 +4,7 @@ import styles from "../styles/Footer.module.css";
 import Image from "next/image";
 const Footer = () => {
   const phoneNumber = "9413350792"; // Replace with your WhatsApp number
-  const message = encodeURIComponent("Hi, I am from Vinayak Constructions Company.");
+  const message = encodeURIComponent("Hello, I came across Vinayak Constructions and would like to know more about your services. Looking forward to your response.");
   const whatsappLink = `https://wa.me/${phoneNumber}?text=${message}`;
   return (
     <>
