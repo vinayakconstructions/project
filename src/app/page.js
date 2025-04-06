@@ -188,7 +188,7 @@ export default function Home({ Component, pageProps }) {
             animate={{ x: ["100%", "-100%"] }}
             transition={{ repeat: Infinity, duration: 10, ease: "linear" }}
           >
-            <span className="mx-8">🚀 Vinayak Constructionss</span>
+            <span className="mx-8">🚀 Vinayak Constructions</span>
             <span className="mx-8">🏗️ Excellence in Infrastructure</span>
             <span className="mx-8">🏢 Building the Future</span>
           </motion.div>
