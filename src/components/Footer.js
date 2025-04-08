@@ -78,7 +78,7 @@ const Footer = () => {
         <p style={{ textAlign: "left" }}>Vaibhav Saxena -  +91 9413350792</p>
         <p style={{ textAlign: "left" }}>Ikramuddin khan - +91 9414176392</p>
         <p style={{ textAlign: "left" }}>Neeraj Khandelwal - +91 9829035027</p>
-        <p style={{ textAlign: "left" }}>Ghanshyam Khandelwal - +91 9413350792</p>
+        <p style={{ textAlign: "left" }}>Ghanshyam Khandelwal - +91 9829037127</p>
         <p style={{ textAlign: "left" }}>
           Email:{" "}
           <a href="mailto:Vinayakconstructions9255@gmail.com">

@@ -69,7 +69,7 @@ const ContactUs = () => {
             Vaibhav Saxena - 9413350792<br></br>
             Ikramuddin khan - 9414176392<br></br>
             Neeraj Khandelwal - 9829035027<br></br>
-            <span style={{fontSize:"14px"}}>Ghanshyam Khandelwal</span> - 9413350792<br></br>
+            <span style={{fontSize:"14px"}}>Ghanshyam Khandelwal</span> - 9829037127<br></br>
             </p>
           </div>
           <div className="flex flex-col items-center bg-white shadow-md p-6 rounded-lg">
