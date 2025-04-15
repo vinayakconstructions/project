@@ -81,7 +81,7 @@ export default function Home({ Component, pageProps }) {
     },
     {
       id: 5,
-      name: "Kutubuddin khan, Sufi Agro",
+      name: "Qutubuddin khan, Sufi Agri",
       text: "Working with Vinayak Construction was a great experience. They were organized, skilled, and delivered excellent results on time. We truly appreciate their dedication and would gladly recommend them to others.",
       rating: "⭐⭐⭐⭐⭐",
       // address: "Noida, India",
